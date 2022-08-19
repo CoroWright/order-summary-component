@@ -1,0 +1,104 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--pale-blue);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 300px;
+    border-radius: .5rem;
+    overflow: hidden;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.details {
+    background-color: #ffffff;
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+    padding: 1.2rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+.description {
+    margin-top: .5rem;
+    text-align: center;
+}
+
+.hero-img {
+    max-width: 100%;
+    display: block;
+}
+ 
+ /* plan */
+
+ .plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    margin-top: .5rem;
+    padding: .8rem;
+    border-radius: .5rem;
+ }
+
+ .plan img {
+    padding-right: .7rem;
+ }
+
+.img-price {
+    display: flex;
+    align-items: center;
+}
+
+
+/* button styles */
+
+button {
+    border: none;
+    border-radius: .3rem;
+    margin: 1rem auto .5rem;
+    padding: .8rem;
+    width: 100%;
+    font-weight: 750;
+}
+
+.proceed-button {
+    color: white;
+    background-color: var(--bright-blue);
+}
+
+.proceed-button:hover {
+    background-color: hsl(248, 50%, 50%);
+}
+
+.cancel-button {
+    background-color: white;
+    color: var(--pale-blue);
+}
+
+.cancel-button:hover {
+    color: var(--dark-blue);
+}
